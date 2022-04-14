@@ -231,3 +231,27 @@ main {
 .content .link a {
    color: #303030;
 }
+
+@media screen and (max-width:768px) {
+   .section {
+      padding: 0rem 0rem;
+   }
+
+   .hero-banner-content {
+      background-color: #fff;
+      width: 100%;
+   }
+
+   .btn-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0rem 1rem 0 1rem;
+      border-bottom: 1px solid #ddd;
+      gap: 1rem;
+   }
+
+   .tab-content {
+      padding: 1rem;
+   }
+
+}
