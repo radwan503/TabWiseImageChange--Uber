@@ -74,7 +74,6 @@ h4 {
 }
 
 p {
-   margin-bottom: 1.25rem;
    color: var(--clr-grey-5);
 }
 
@@ -111,23 +110,30 @@ p {
 
 .btn {
    text-transform: uppercase;
-   background: transparent;
-   color: var(--clr-black);
-   padding: 0.375rem 0.75rem;
+   background: #000;
+   color: var(--clr-white);
+   padding: 1rem 1.5rem;
    letter-spacing: var(--spacing);
    display: inline-block;
    transition: var(--transition);
    font-size: 0.875rem;
    border: 2px solid var(--clr-black);
    cursor: pointer;
-   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
    border-radius: var(--radius);
+   transition: .3s;
+   -webkit-transition: .3s;
+   -moz-transition: .3s;
+   -ms-transition: .3s;
+   -o-transition: .3s;
 }
 
 .btn:hover {
    color: var(--clr-white);
-   background: var(--clr-black);
+   background: #000;
+   opacity: .7;
 }
+
 main {
    min-height: 100vh;
    display: grid;
@@ -146,7 +152,7 @@ main {
    background-color: #fff;
 }
 
-.hero-banner{
+.hero-banner {
    background-image: url('./img/driver.webp');
    background-size: cover;
    background-position: center;
@@ -154,22 +160,23 @@ main {
    height: 100vh;
    width: 100%;
 }
+
 .hero-banner-content {
    background-color: #fff;
-   
-   width: 45%;
+   width: 50%;
 }
+
 .btn-container {
    display: flex;
    justify-content: space-between;
-   padding: 0rem 3rem 0 3rem;
+   padding: 0rem 5rem 0 5rem;
    border-bottom: 1px solid #ddd;
    gap: 2rem;
 }
 
 .tab-btn {
-   padding: 20px 12px;
-   width: 81px;
+   padding: 40px 12px 22px 12px;
+   width: 80px;
    background-color: #fff;
    text-align: center;
    display: flex;
@@ -178,16 +185,49 @@ main {
    font-size: 13px;
    font-weight: 600;
 }
+
 .tab-content {
-   padding: 0rem 3rem 0 3rem;
+   padding: 4rem 3rem 3rem 3rem;
 }
+
+.tab-btn.active {
+   border-bottom: 4px solid #000;
+}
+
 .content {
    display: none;
- }
- .tab-btn.active {
-   border-bottom: 5px solid #000;
- }
- 
- .content.active {
+}
+
+.content.active {
    display: block;
- }
+}
+
+.content h1.title {
+   font-size: 3.5rem;
+   font-weight: 500;
+   text-transform: initial;
+   line-height: 4rem;
+}
+
+.sign-btn {
+   font-weight: 600;
+   font-size: 1rem;
+   text-transform: initial;
+}
+
+.content .subtitle {
+   font-size: 1rem;
+   font-weight: 500;
+   text-transform: initial;
+   margin: 2rem 0px;
+}
+
+.content .link {
+   color: #303030;
+   text-transform: initial;
+   margin-top: 2rem;
+}
+
+.content .link a {
+   color: #303030;
+}
